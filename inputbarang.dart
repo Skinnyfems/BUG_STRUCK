@@ -51,7 +51,6 @@ void main(List<String> args) {
 
       stdout.write("\nMASUKAN NAMA BARANG BARU : ");
       String barang_baru = stdin.readLineSync()!;
-      barang.add(barang_baru);
 
       barang[indexbarang - 1] = barang_baru;
 
@@ -70,7 +69,8 @@ void main(List<String> args) {
         int hapus_barang = int.parse(stdin.readLineSync()!);
         barang.removeAt(hapus_barang - 1);
         break;   
-      default: 'NOMOR YANG ANDA INPUT SALAH';
+      default:
+        print('NOMOR YANG DIMASUKAN SALAH');
     }
   }
 } 
